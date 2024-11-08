@@ -1,0 +1,281 @@
+/* Importar fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap');
+
+/* Tipografía */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+h1, h2, h3, .navbar-brand {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333; /* Gris piedra */
+}
+
+.navbar-brand img {
+    margin-right: 8px;
+}
+
+.navbar-nav .nav-link {
+    color: #FFF5E1; /* Crema claro */
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #A8C686; /* Verde salvia */
+}
+
+/* Carrusel */
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #FF9A76; /* Naranja suave */
+    border-radius: 50%;
+}
+
+/* Sección de Introducción */
+section h1 {
+    color: #A8C686; /* Verde salvia */
+    font-weight: 600;
+}
+
+section p {
+    color: #6B6E70; /* Gris piedra */
+}
+
+/* Botones */
+.btn-primary {
+    background-color: #FF9A76; /* Naranja suave */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #ff784e; /* Un tono más oscuro de naranja */
+}
+
+/* Pie de Página */
+footer {
+    background-color: #333;
+}
+
+footer p, footer a {
+    color: #FFF5E1; /* Crema claro */
+}
+
+footer a:hover {
+    color: #FF9A76; /* Naranja suave */
+}
+
+footer img{margin-left: 15px;
+}
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 300px;
+    }
+}
+
+/* Contenedor de formulario centrado */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Formulario */
+form {
+    max-width: 800px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Etiquetas */
+.form-label {
+    font-weight: 600;
+    color: #333;
+}
+
+/* Controles de formulario */
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%; /* Añade esta línea para que los inputs ocupen todo el ancho */
+    box-sizing: border-box; /* Asegura que el padding no desborde */
+}
+
+.form-select {
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%; /* Añade esta línea para los select */
+    box-sizing: border-box;
+}
+
+textarea.form-control {
+    resize: vertical;
+    width: 100%; /* Asegura que el textarea ocupe todo el ancho */
+}
+
+/* Botones */
+.btn-primary {
+    background-color: #FF9A76; /* Naranja suave */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #ff784e; /* Un tono más oscuro de naranja */
+}
+
+/* Estilo base para el contenedor de las cards */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 0;
+  }
+  
+  /* Estilos para cada columna */
+  .col {
+    flex: 1 1 calc(50% - 1.5rem); /* Ajusta el tamaño de las columnas */
+    margin-bottom: 1.5rem;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Hover effect for the cards */
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilo para la imagen */
+  .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Efecto cuando se pasa el mouse sobre la imagen */
+  .card:hover .card-img-top {
+    transform: scale(1.05);
+  }
+  
+  /* Estilo para el cuerpo de la tarjeta */
+  .card-body {
+    padding: 1.5rem;
+  }
+  
+  /* Título de la card */
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  /* Descripción de la card */
+  .card-text {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+  }
+   
+ 
+  
+  /* Responsividad para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .col {
+      flex: 1 1 100%;
+    }
+  }
+
+  
+ /* Estilo base para el contenedor de servicio */
+ .serviciobox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 1100px; /* Ajusta el ancho máximo según tus necesidades */
+    width: 90%; /* El ancho puede ser un porcentaje para hacerlo más responsivo */
+}
+
+/* Estilo para la imagen */
+.servicio {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+/* Estilo para el texto dentro de la caja */
+.textoservicio {
+    width: 55%;
+    color: #333;
+    padding-left: 20px;
+}
+
+/* Títulos dentro del texto */
+.textoservicio h3 {
+    color: #A8C686; /* Verde salvia */
+    font-weight: 600;
+}
+
+/* Párrafos dentro del texto */
+.textoservicio p {
+    color: #6B6E70; /* Gris piedra */
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .serviciobox {
+        flex-direction: column;
+        text-align: center;
+    }
+    .servicio {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .servicio1 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .textoservicio {
+        width: 100%;
+        padding-left: 0;
+    }
+} 
+
+
