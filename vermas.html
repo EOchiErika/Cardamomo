@@ -12,7 +12,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img src="img/logo.png" alt="Logo"  class="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,10 +20,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html" >Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacto.html" >Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
         </div>
@@ -33,7 +33,6 @@
 <div class="serviciobox">
  <img class="servicio" src="img/servicio.jpg">
    <div class="textoservicio"><h3>Qué Incluye:</h3>
-
     <p><ul>
     <li>Opciones que incluyen bocadillos gourmet, estaciones de sushi, mesas de quesos y charcutería, y más.</li>
     <li>Barra de cocteles personalizada con mixólogos expertos y bebidas temáticas.</li>
@@ -48,10 +47,71 @@
     <li>Interacción directa con los invitados por parte del personal, asegurando un servicio amigable y exclusivo.</li>
     <li>Desmontaje y limpieza al finalizar para que el anfitrión no se preocupe por nada.</li>
      </ul></p>
+
+         <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Hace tu reserva
+</button>
+<!-- Modal -->
+ <!-- Scrollable modal -->
+<div class="modal-dialog modal-dialog-scrollable">
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-titlefs-5" id="exampleModalLabel">Hace tu reserva</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-container">
+          <form class="formulario">
+            <div class="mail">
+              <label for="inputEmail4" class="form-label">Email</label><br>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="adress">
+              <label for="inputAddress" class="form-label">Nombre</label><br>
+              <input type="text" class="form-control" id="inputAddress">
+            </div>
+            <div class="adress">
+              <label for="inputAddress2" class="form-label">Fecha</label><br>
+              <input type="date" class="form-control" id="inputAddress2">
+            </div>
+            <div class="city">
+              <label for="inputCity" class="form-label">Direccion</label><br>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="province">
+              <label for="inputState" class="form-label">Seleccione tipo de evento</label><br>
+              <select id="inputState" class="form-select">
+                <option selected>Seleccionar...</option>
+                <option>Eventos al aire libre</option>
+                <option>Boda</option>
+                <option>Ejecutivo</option>
+                <option>Fiesta privada</option>
+              </select>
+            </div>
+            <div class="areatexto">
+              <label for="exampleFormControlTextarea1" class="form-label">Observaciones</label><br>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btnbtn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary">Reservar</button>
+      </div>
     </div>
+  </div>
+</div>
+</div>
+    </div>
+
 </div>
 
 
+  <!-- Pie de Página -->
   <footer class="bg-dark text-light py-4">
     <div class="container text-center">
         <p>&copy; 2024 Cardamomo Catering</p>
