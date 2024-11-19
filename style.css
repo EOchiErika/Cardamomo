@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap');
 
 
@@ -9,6 +10,7 @@ body {
 h1, h2, h3, .navbar-brand {
     font-family: 'Poppins', sans-serif;
 }
+
 
 .navbar {
     background-color: #333;
@@ -27,6 +29,7 @@ h1, h2, h3, .navbar-brand {
     color: #A8C686; 
 }
 
+
 .carousel-item img {
     height: 500px;
     object-fit: cover;
@@ -40,22 +43,22 @@ h1, h2, h3, .navbar-brand {
 
 
 section h1 {
-    color: #A8C686;
+    color: #A8C686; 
     font-weight: 600;
 }
 
 section p {
-    color: #6B6E70;
+    color: #6B6E70; 
 }
 
 
 .btn-primary {
-    background-color: #FF9A76;
+    background-color: #FF9A76; 
     border: none;
 }
 
 .btn-primary:hover {
-    background-color: #ff784e;
+    background-color: #ff784e; 
 }
 
 
@@ -64,7 +67,7 @@ footer {
 }
 
 footer p, footer a {
-    color: #FFF5E1;
+    color: #FFF5E1; 
 }
 
 footer a:hover {
@@ -79,6 +82,7 @@ footer img{margin-left: 15px;
         height: 300px;
     }
 }
+
 
 .form-container {
     display: flex;
@@ -110,7 +114,7 @@ form {
     padding: 10px;
     margin-bottom: 15px;
     width: 100%; 
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 .form-select {
@@ -122,29 +126,50 @@ form {
 
 textarea.form-control {
     resize: vertical;
-    width: 100%; 
+    width: 100%;
 }
 
-.btn-primary {
+
+.btn-primary, .vermas{
     background-color: #FF9A76;
+    color: #FFF5E1;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
+    margin-top: 10px;
 }
 
-.btn-primary:hover {
-    background-color: #ff784e;
+.btn-primary:hover, .vermas:hover {
+    background-color: #ff784e; 
 }
+
+.btnbtn-secondary{
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
 
 .row {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    margin: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0;
+    margin-bottom: 0;
   }
   
+
   .col {
     flex: 1 1 calc(50% - 1.5rem); 
     margin-bottom: 1.5rem;
@@ -157,15 +182,15 @@ textarea.form-control {
     overflow: hidden;
     background-color: #fff;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
   }
-  
 
   .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
   
- 
+
   .card-img-top {
     width: 100%;
     height: 200px;
@@ -178,7 +203,7 @@ textarea.form-control {
     transform: scale(1.05);
   }
   
-
+ 
   .card-body {
     padding: 1.5rem;
   }
@@ -191,7 +216,7 @@ textarea.form-control {
     color: #333;
   }
   
-
+ 
   .card-text {
     font-size: 1rem;
     color: #666;
@@ -199,14 +224,17 @@ textarea.form-control {
   }
    
  
+  
+ 
   @media (max-width: 768px) {
     .col {
       flex: 1 1 100%;
     }
   }
 
+  
 
- .serviciobox {
+ .serviciobox{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -215,31 +243,47 @@ textarea.form-control {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin: 40px auto;
-    max-width: 1100px;
+    max-width: 1100px; 
+    width: 90%; 
+}
+.infocontacto{
+    align-items: center;
+    padding: 20px;
+    margin: 25px auto;
+    max-width: 1100px; 
     width: 90%; 
 }
 
-.servicio {
+
+
+.servicio, .infocontacto {
     width: 40%;
     height: auto;
     object-fit: cover;
     border-radius: 8px;
 }
+.infocontacto, .textinfocontacto {
+    align-content: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+}
 
 
-.textoservicio {
+.textoservicio, .textinfocontacto {
     width: 55%;
     color: #333;
     padding-left: 20px;
 }
 
-.textoservicio h3 {
+
+.textoservicio h3, .textinfocontacto h3, .formulario h3, .modal-titlefs-5{
     color: #A8C686; 
     font-weight: 600;
 }
 
 
-.textoservicio p {
+.textoservicio p, .textinfocontacto p{
     color: #6B6E70; 
     font-size: 1rem;
     line-height: 1.6;
@@ -248,6 +292,10 @@ textarea.form-control {
 
 @media (max-width: 768px) {
     .serviciobox {
+        flex-direction: column;
+        text-align: center;
+    }
+    .infocontacto{
         flex-direction: column;
         text-align: center;
     }
@@ -260,6 +308,10 @@ textarea.form-control {
         margin-bottom: 20px;
     }
     .textoservicio {
+        width: 100%;
+        padding-left: 0;
+    }
+    .textinfocontacto{
         width: 100%;
         padding-left: 0;
     }
